@@ -1,0 +1,34 @@
+body{
+    background: #FFE4E1;
+}
+.produits{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+.produit {
+    box-shadow: 0 4px 10px rgb(47 109 153 / 20%);
+    background: #FFB6C1;
+    width: 32%;
+    border-radius: 2.3vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 15px;
+}
+.produit a{
+    text-decoration: none;
+    color: #CD5C5C;
+}
+
+#blocks {
+    margin: 20px;
+}
+h2.title1 h2.title2 h2.title3{
+    color: rgb(188, 24, 24);
+    display: block;
+
+}

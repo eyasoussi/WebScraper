@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width , initial-scale=1.0">
+        <title>Scraped</title>
+        <link rel="stylesheet" href="result.css" type="text/css" media="all">
+    </head>
+    <body>
+        <section id="blocks">
+            <h2 class="title1">TUNISIANET</h2>
+        <div class="produits">
+          
+        <% for(let i of tab_tn){ %>
+            <div class="produit">
+                <h2><%= i.titre %> </h2>
+            <h3>Prix:</h3>
+            <%= i.prix %>
+        <br>
+        <a href= <%=i.url %> target="_blank"> TunisiaNet</a>
+            </div>
+            
+        <% } %>
+        </div>
+        <h2 class="title2">SCOOP</h2>
+        <div class="produits">
+            
+            <% for (let i of tab_sc){ %>
+                <div class="produit ">
+                    <h2><%= i.titre %> </h2>
+                <h3>Prix Scoop :</h3>
+                <%= i.prix %>
+            <br>
+            <a href= <%=i.url %> target="_blank">scoop</a>
+    
+                </div>
+            <% } %>
+        </div>
+        <h2 class="title3">Space net</h2>
+        <div class="produits">
+            
+            <% for (let i of tab_my){ %>
+                <div class="produit ">
+                    <h2><%= i.titre %> </h2>
+                <h3>Prix space net :</h3>
+                <%= i.prix %>
+            <br>
+            <a href= <%=i.url %> target="_blank">space net</a>
+    
+                </div>
+            <% } %>
+        </div>
+    
+    
+              
+        
+        
+</section>
+     
+    </body>
+</html>
